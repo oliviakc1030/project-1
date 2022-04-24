@@ -1,19 +1,19 @@
+ /* To identify any selector easily, use outline: 1px solid red; */
 /*image*/
-header {
+h1 {
   background-image: url("img/background-sprinkles.webp");
   height: 350px; /* You must set a specified height */
   background-size: cover;
   position: relative;
-}
-h1 {
   color: white;
   font-family: 'Roboto',sans-serif;
   font-weight: 200; 
-  font-size: 125px;
+  font-size: 130px;
   text-align: center;
 }
+/* Note: I want to make css rules are for all the other headers on the other pages. For some reason this is causing issues.*/
 
-main, body, h2,h3 {
+main, body,h2,h3 {
   font-family: 'Roboto',sans-serif; 
   font-size: 30px;
   font-weight: 300;
