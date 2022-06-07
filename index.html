@@ -1,12 +1,15 @@
 <html lang="en">
-<head>
+<head>      
     <meta charset="utf-8">
     <meta name="author" content="Olivia KC">
     <meta name="description" content="Baking Blog">
     <title>Adventures in Baking: Home</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
     
 <!-- link in Bootstrap here -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<!-- normalize.css for cross-browser stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 <!-- CSS link here -->
     <link href="style.css" rel="stylesheet">
 </head>
@@ -19,46 +22,64 @@
             </div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html"> About</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="tools.html">Tools</a></li>
-         </ul>
-    </nav>
+ 
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html"> About</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="tools.html">Tools</a></li>
+    </ul>
+</nav>
+
+
 
 <main>
-
-<section>
-    <div class="under-nav">
-        <h1> New Monthly Recipes</h1>
-    </div>
-</section>
+    <section>
+        <div class="under-nav">
+            <h1> New Monthly Recipes</h1>
+        </div>
+    </section>
 
 <section>
     <div class="wrap">
 
+        <div class="first-card">
+            <div class="card-body"> 
+                <img src="img/strawberry-plant.jpg" alt=" Blooming strawberries in a pot" class="first-card-image">
+                <h2 class="card-title">Homemade Strawberry Shortcake</h2>
+                <p class="card-description">Summer is finally here! I have never made Strawberry Shortcake but this summer I am ready to try with my very own homegrown strawberries. If there was another hobby I love more than baking it would gardening. I may have to start another gardening blog. But, for now I will try to merge both my hobbies in this blog.</p>
+                <p class="card-description">This is the recipie I will be trying this month. I will be adding more information about my own experience with this recipie. Crossing fingers this turns out well.</p>
+            </div>  
+            <button class="card-btn"><a href="https://sallysbakingaddiction.com/easy-homemade-strawberry-shortcake/">View Recipe</a></button> 
+        </div>
+
         <div class="card">
             <div class="card-body"> 
-                <img src="" alt="" class="card-image">
-                <h2 class="class-title">Hermine's Smoked Salmon & Chive Soda Bread</h2>
-                <p class="card-description">I will explain my own experience making the recipe.If you have never made bread before try a soda bread. It is amazing how easy a soda bread is to make. All you have to do is put the ingredients together and watch it bake. Before attempting this soda bread you may want to check out a recipe was a plain soda bread to get you started. I will add more to this section.</p>
+                <img src="img/kc-soda-bread.jpg" alt="Cooked soda bread on a plate" class="card-image">
+                <h2 class="card-title">Hermine's Smoked Salmon & Chive Soda Bread</h2>
+                <p class="card-description">If you have never made bread before try a soda bread. It is amazing how easy a soda bread is to make. All you have to do is put the ingredients together and watch it bake. Before attempting this soda bread you may want to check out a recipe for a plain soda bread to get you started.</p>
             </div>  
             <button class="card-btn"><a href="https://thegreatbritishbakeoff.co.uk/recipes/all/hermine-smoked-salmon-and-chive-soda-bread/">View Recipe</a></button> 
         </div>
 
         <div class="card">
             <div class="card-body"> 
-                <img src="" alt="" class="card-image">
-                <h2 class="class-title">The Monthly Puppy Recipe</h2>
-                <p class="card-description">I will explain my own experience making the recipe.I have never tried to make a bake for my perfect pet. But, this month I will attempt to make a treat for, Buffy. I think she would eat just about anything but I hope to be able to make something she will love.</p>
-                <p>Add picture of the recipe and add a hyperlink to the recipe </p>
+                <img src="img/snoot.jpg" alt="Cooked dog biscuits in a bowl" class="card-image">
+                <h2 class="card-title">The Monthly Puppy Recipe</h2>
+                <p class="card-description">I have never tried to make a bake for my perfect pet, Buffy. But, this month I will attempt to make her a treat. I think she would eat just about anything but I hope to be able to make something she will love.</p>
             </div>  
             <button class="card-btn"><a href="https://www.kingarthurbaking.com/recipes/best-of-breed-dog-biscuits-recipe">View Recipe</a></button> 
         </div>
         </div>
     </div>
 </main>
+
+<footer>
+    <div class="page-footer">
+        <p>Copyright &copy 2022 Olivia KC. All Rights Reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
