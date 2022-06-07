@@ -1,52 +1,35 @@
  /* To identify any selector easily, use outline: 1px solid red; */
-/*image*/
 
-/* Headers*/
+
+/* Main Heading — Smallest*/
+
 .jumbotron-fluid {
-  background-image: url("img/background-sprinkles.webp");
+  background-image: url("img/background-spatulas.jpg");
   background-size: cover;
-  background-color: white;
+  background-color: palevioletred;
   padding: 100px;
 }
 
-h1 {
-  color: white;
-  font-family: 'Arial',sans-serif;
-  font-size: 600px;
-  font-weight: 200;
+.container h1{
+  color:white;
+  outline: 3px solid white;
+  font-size: 50px;
+  font-weight: 50;
   letter-spacing: 5px;
   text-align: center;
   text-transform: uppercase;
-  text-shadow: 2px palevioletred;
-  outline: 3px solid white;
+  text-shadow: 2px palevioletred; 
 }
 
-.under-nav {
-  display: flex;
-  padding: 50px 25px 50px;
-}
-
-.under-nav h1 {
-  color: black;
-  font-size: 55px;
-}
-/* Note: I want to make css rules for all the other headers on the other pages. For some reason this is causing issues.*/
-
-main {
-  font-family: 'Roboto',sans-serif; 
-  font-size: 25px;
-  font-weight: 400;
-  text-align: center;
-}
-
-h2 {
+/* H2 Headings*/
+.h2-title {
   border-bottom: 3px solid lightblue;
   padding-top: 60px;
   padding-bottom: 15px;
   line-height: .5em;
 }
 
-/* Navigation*/
+/* Navigation Bar */
 ul {
   list-style-type: none;
   width: 100%;
@@ -54,57 +37,134 @@ ul {
   margin: 0px;
   padding: 25px;
 }
-  
+
 li a {
-  float: left;
   color: black;
-  width: 25%; /* Five links of equal widths */
+  width: 10%; /* Five links of equal widths */
   text-decoration: none;
-  font-size: 30px;
-  font-weight: 300; 
-  border-bottom: 1px solid black;
+  font-size: 25px;
+  font-weight: lighter; 
   padding: .5rem;
-  text-align: center;
-}
-  
-/* mouse over the rows*/
-li a:hover {
-  background-color: lightblue;
 }
 
-h2 {
-  text-align: center;
+ /* mouse over the rows*/
+ li a:hover {
+  background-color: lightpink;
 }
 
-/* Home Page Monthly Recipies */
+/* Main Section of Webpage*/
+main {
+  margin: 5px 10px 5px 10px;
+  font-family: 'Roboto',sans-serif; 
+  font-size: 25px;
+  font-weight: 400;
+}
 
+/* Under the Nav Bar Title for pages: Home & Recipies */
+
+.under-nav h1 {
+  color: black;
+  font-size: 40px;
+  text-align:center;
+}
+
+/* Home Page: Monthly Recipie Cards */
 .wrap {
   margin:2rem;
-  display:grid;
-  grid-template-columns: repeat (auto-fit, minmax(12rem, 16rem));
-  grid-gap: 2rem;
-  justify-content:center;
+  grid-gap:5rem;
+}
+
+.first-card {
+  overflow:hidden;
+  border-radius: var(--radius);
+  display:flex;
+  grid-column: 1/4;
+  flex-direction:column;
+  justify-content:space-between;
+  cursor:pointer;
+}
+
+.first-card-image {
+  height:40rem;
+  width: 100%;
+  object-fit:cover;
 }
 
 .card {
   overflow:hidden;
-  box-shadow:0px 2px 20px var(--clr-gray200);
   border-radius: var(--radius);
-  display: flex;
+  display:flex;
   flex-direction:column;
-  justify-content: space-between;
+  justify-content:space-between;
   cursor:pointer;
-  transition:transform 200ms ease-in;
 }
 
+.card-image{
+  height:25rem;
+  width:100%;
+  object-fit:cover;
+}
+
+.card-title {
+  padding:1rem;
+}
+
+.card-description {
+  padding:0 1rem;
+  border-bottom:none;
+  font-weight: lighter;
+}
+
+.card-btn {
+  padding:1rem;
+  font-weight:bold;
+  font-size:2x;
+  margin:1rem;
+  border: 2px solid lightblue;
+  background:transparent;
+  color: lightblue;
+  border-radius: var(--radius);
+  transition:200ms ease-in; 
+}
+
+.card-btn:hover {
+  background:lightblue;
+  color:white;
+}
+
+/* Footer */
+
+.page-footer {
+  border-top: 3px solid lightpink;
+  padding: 1rem;
+  margin: 5px 10px 5px 10px;
+  font-family: 'Roboto',sans-serif; 
+  font-size: 20px;
+  font-weight: lighter;
+} 
+
+/* Page for About */
+
+/* Page for About — Images */
+.about-buffy {
+  display:block;
+  border-radius:50%;
+  height:10rem
+}
+
+.about-img {
+  display:block;
+  border-radius:50%;
+  height:10rem;
+}
 
 /* Page for the Recipies */
 
 .grid-container {
   display:grid;
   background-color: peachpuff;
-  gap: 50px;
-  font-size: 20px;
+  gap:50px;
+  font-size:20px;
 }
 
 .item1 {
@@ -122,34 +182,95 @@ grid-column: 1;
   grid-column: 2/4;
 }
 
+
 /* Media Query - 598px */
 @media(min-width: 598px) {
+/* Navigation Bar */
+ul {
+  list-style-type: none;
+  width: 100%;
+  overflow: auto;
+  margin: 0px;
+  padding: 25px;
+}
 
-/* Header*/
-.jumbotron-fluid {
-    background-image: url("img/background-spatulas.jpg");
-    background-size: cover;
-  }
-  
-h1 {
-    color: white;
-    text-align: left;
-    font-size: 50px;
-    padding: 25px;
-  }
-  }
+li a {
+  color: black;
+  width: 10%; /* Five links of equal widths */
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: lighter; 
+  padding: .5rem;
+}
+
+ /* mouse over the rows*/
+ li a:hover {
+  background-color: lightpink;
+}
+
+}
 
   /* Media Query - 768px */
 @media(min-width: 768px) {
 
   /* Header*/
   .jumbotron-fluid {
-      background-image: url("img/background-sprinkles.webp");
-      background-position: center;
-      background-size: cover;
+    background-image: url("img/background-sprinkles.webp");}
+
+  .container h1{
+    font-size: 100px;
+    font-weight: 50;
   }
-  h1 {
-    color: white;
+
+    /* Nav Bar*/
+  ul {
+    list-style-type: none;
+    width: 100%;
+    overflow: auto;
+    margin: 0px;
+    padding: 25px;
+  }
+    
+  li a {
+    float: left;
+    color: black;
+    width: 25%; /* Five links of equal widths */
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 300; 
+    border-bottom: 1px solid black;
+    padding: .5rem;
     text-align: center;
   }
+    
+  /* mouse over the rows*/
+  li a:hover {
+    background-color: lightblue;
+  }
+
+/* Under the Nav Bar Title for pages: Home & Recipies */
+
+.under-nav h1 {
+  color:black;
+  font-size:40px;
+  text-align:left;
+}
+
+/* Home Page: Monthly Recipie Cards */
+.wrap {
+  margin:2rem;
+  display:grid;
+  grid-gap:2rem;
+}
+  }
+
+  /* Media Query - 1200px */
+@media(min-width: 1200px) {
+
+   /* Header*/
+  .container h1{
+    font-size: 150px;
+    font-weight: 50;
+  }
+  
   }
