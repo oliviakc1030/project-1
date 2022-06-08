@@ -250,6 +250,7 @@ main {
   border-radius:50%;
   height:25rem;
   padding:2rem;
+  cursor:pointer;
 }
 .bars {
   border-radius:50%;
@@ -295,6 +296,54 @@ li {
 
 p {
   font-weight: lighter;
+}
+
+/*Modal*/
+
+/* The Modal - Background*/
+.modal {
+  display: none; 
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+/* Modal Content & Box */
+.modal-content {
+  background-color: pink;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid palevioletred;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+/* The Button */
+#myBtn {
+  background-color: pink;
+  color: black;
+  border: 2px solid palevioletred
+}
+
+#myBtn:hover {
+background-color: transparent;
+}
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Media Query - 598px */
