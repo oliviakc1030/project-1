@@ -273,31 +273,16 @@ main {
 /* Page for Tools */
 
 /* Button*/
-.tool-btn {
-  padding:1rem;
-  font-weight:bold;
-  font-size:1x;
-  margin:1rem;
-  border: 2px solid pink;
-  background:transparent;
-  color: lightblue;
-  transition:200ms ease-in; 
-}
-
-.tool-btn:hover {
-  background:pink;
-  color:white;
-}
 
 /*List of Tools*/
-li {
-  font-weight: bold;
-}
-
 p {
   font-weight: lighter;
+  padding: 20px;
 }
 
+a {
+  padding: 1rem;
+}
 /*Modal*/
 
 /* The Modal - Background*/
